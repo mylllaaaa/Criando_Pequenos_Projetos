@@ -67,9 +67,9 @@ body {
     display: flex;
     gap: 16px;
     align-items: center;
-    opacity: 0;
+    opacity: 0; /*Importante*/
 }
 
 .list-item:hover .list-item__action{
-    opacity: 0.3;
+    opacity: 0.3; /*Importante*/
 }
