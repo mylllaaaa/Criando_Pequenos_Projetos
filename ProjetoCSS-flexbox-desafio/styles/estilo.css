@@ -1,0 +1,73 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../imagens/bg-2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header{
+    margin: 100px auto 0;
+    width: 90%;
+    text-align: center;
+}
+
+.header__title{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: aliceblue;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 0;
+}
+
+.header p{
+    color: white;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+
+    display: inline-block;
+    width: fit-content;
+    border-bottom: 2px solid white;
+}
+
+.conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    
+    width: 90%;
+    max-width: 860px;
+    padding: 16px;
+    background-color: white;
+}
+
+.conteudo__quadrante{
+    flex-basis: 250px;
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.conteudo__quadrante img{
+    width: 100%;
+}
+
+.conteudo__quadrante p{
+    font-size: 15px;
+    color: white;
+    padding-left: 8px;
+}
