@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    --height--divs: 76em;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #162028;
+}
+
+.header__title{
+    color: rgba(248, 247, 247, 0.877);
+    letter-spacing: 0.13em;
+    font-family: 'Federo', sans-serif;
+    font-weight: 100;
+    margin-left: 3em;
+}
+
+.header__nav ul{
+    display: flex;
+    gap: 1.5em;
+    padding: 1em 3em;
+    margin: 0;
+    list-style-type: none;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
+
+.header__nav a{
+    text-decoration: none;
+    padding: 1em;
+    color: #425564;
+}
+
+/*-----------------------------------*/
+
+.primeira-tela{
+    height: var(--height--divs);
+    background-image: url(imagens/topo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*-----------------------------------*/
+
+.segunda-tela{
+    height: var(--height--divs);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.segunda-tela__descricao{
+    width: 50%;
+    margin-bottom: 5em;
+}
+
+.segunda-tela h1{
+    color: rgba(26, 41, 57, 0.7);
+    letter-spacing: 0.13em;
+    font-family: 'Italiana', sans-serif;;
+    font-size: 3em;
+}
+
+.segunda-tela__texto{
+    font-family: 'Federo', sans-serif;
+    color: rgba(26, 41, 57, 0.7);
+    font-size: 1.7em;
+}
+
+.segunda-tela__opcoes{
+    display: flex;
+    justify-content: space-around;
+    gap: 7em;
+    padding: 2em;
+}
+
+.segunda-tela__opcoes__op{
+    width: fit-content;
+    box-shadow: 2px 2px 2px rgba(153, 148, 148, 0.5);
+}
+
+.segunda-tela__opcoes__op h4{
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: rgba(4, 13, 23, 0.7);
+}
+
+.segunda-tela__opcoes__op p{
+    letter-spacing: 0.1em;
+    color: rgba(26, 41, 57, 0.7);
+}
+
+.segunda-tela__opcoes__op img{
+    width: 22em;
+}
+
+.segunda-tela__opcoes__op:hover{
+    transform: scale(1.1);
+}
+
+/*-----------------------------------*/
+
+.terceira-tela{
+    height: var(--height--divs);
+    background-image: url(imagens/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.terceira-tela__art{
+    padding-left: 5.5em;
+}
+
+.terceira-tela h1{
+    color: rgba(248, 247, 247, 0.877);
+    text-transform: uppercase;
+    font-family: 'Italiana', sans-serif;
+    font-size: 5em;
+    font-weight: 100;
+    padding: 0;
+    white-space: pre-line;
+}
+
+.terceira-tela p{
+    font-family: 'Federo', sans-serif;
+    color: rgba(255, 255, 255, 0.933);
+    font-size: 1.5em;
+    width: 42%;
+}
+
+/*-----------------------------------*/
+
+.footer{
+    font-family: 'Federo', sans-serif;
+    letter-spacing: 0.2em;
+    text-align: center;
+    padding: 3em;
+    color: #6f8597;
+    background-color: #0b171f;
+}
