@@ -1,0 +1,217 @@
+:root{
+    --primary--color: #fed001;
+}
+
+html{
+    /*font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;        Atalho*/ 
+    font: 400 62.5% 'Inter', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+h1{
+    font-size: 4.8rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3.2rem;
+}
+
+p, a{
+    font-size: 1.6rem;
+}
+
+.btn{
+    background-color: var(--primary--color);
+    border: 4px;
+    font-size: 1.8rem;
+    text-decoration: none;
+    padding: 1.6rem 4.6rem;
+    display: inline-block;
+    color: inherit;
+}
+
+nav a{
+    color: inherit; /*herda do elemento pai*/
+}
+
+.upper{
+    text-transform: uppercase;
+}
+
+.section__title{
+    padding: 7rem 0;
+    text-align: center;
+    margin: 0;
+}
+
+.section__btn{
+    margin: 7rem 0;
+}
+
+/*--------------------------------------*/
+
+.wrapperContainer{
+    padding-top: 1px; /*para evitar o distanciamento entre as divs*/
+}
+
+.container{
+    max-width: 127.6rem;
+    margin: auto;
+}
+
+.wrapperContainer-fixed{ 
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0; 
+}
+
+.wrapperContainer-padding{
+    padding-top: 8rem;
+}
+
+/*--------------------------------------*/
+
+.wrapperContainer-dark{
+    background-color: #2a2a2a;
+    color: #fafafa;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary--color);
+    padding: 2rem 0;
+}
+
+.header__nav ul{
+    display: flex;
+    gap: 0.6rem;
+    list-style-type: none;
+}
+
+.header__nav a{
+    padding: .75em 1.15em;
+    border: solid 1px;
+    text-decoration: none;
+}
+
+.header__nav a:hover{
+    background-color: black;
+}
+
+/*--------------------------------------*/
+
+.wrapperContainer-hero{
+    background-image: linear-gradient(transparent, var(--primary--color));
+}
+
+.heroBanner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20rem;
+}
+
+.hero__title{
+    margin-bottom: 5rem;
+}
+
+/*--------------------------------------*/
+
+.wrapperContainer-light{
+    background-color: #fafafa;
+}
+
+.cursos{
+    text-align: center;
+}
+
+.cursosContainer{
+    display: flex;
+    text-align: left;
+    gap: 2rem;
+}
+
+.cursos_card{
+    flex: 1;
+}
+
+.cursos_card img{
+    display: block;
+    width: 100%;
+}
+
+.cursos_card h3{
+    font-size: 2.4rem;
+}
+
+.cursos_card p{
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.cursos_card_content{
+    border: 1px solid #ccc;
+    border-top: transparent;
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+    padding: 1rem 1.75rem;
+}
+
+/*--------------------------------------*/
+
+.wrapperContainer-dark2{
+    background-color: #003464;
+    color: #fafafa;
+}
+
+.escola{
+    display: flex;
+    gap: 7rem;
+    padding-top: 6rem;
+}
+
+.escola h2{
+    font-size: 3.2rem;
+}
+
+.escola p{
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+/*--------------------------------------*/
+
+.contatos{
+    text-align: center;
+}
+
+.criador{
+    margin: 3rem 0;
+    text-align: right;
+    font: 400 1.8rem "Inter", sans-serif;
+}
+
+/*--------------------------------------*/
+
+.footer{
+    padding: 4rem;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.footer a{
+    color: inherit;
+}
