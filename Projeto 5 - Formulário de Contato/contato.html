@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Informações de contato</title>
+    <link rel="stylesheet" href="contatoCSS.css">
+</head>
+<body>
+
+    <form action="" method="get">
+        <fieldset>
+            <legend>Formulário de Contato</legend>
+
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" required placeholder="Digite seu nome completo">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required placeholder="Digite seu e-mail">
+
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto">
+
+            <label for="msg">Mensagem:</label>
+            <textarea name="message" id="msg" rows="7" required minlength="20" maxlength="250" placeholder="Informações adicionais"></textarea>
+        
+            <div class="btn-div"> 
+                <button type="submit" class="btn">Enviar</button>
+            </div>
+        </fieldset>
+    </form>
+    
+</body>
+</html>

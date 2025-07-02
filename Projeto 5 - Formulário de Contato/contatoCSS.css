@@ -1,0 +1,85 @@
+html{
+    background-color: rgb(109, 133, 134);
+    color: #e6e2e2;
+}
+
+body{
+    min-height: 100vh;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 90%;
+    min-width: 35em;
+    max-width: 45em;
+    padding: 1.5em;
+    background-color: rgb(142, 159, 159);
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px rgb(44, 65, 44);
+}
+
+fieldset{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+label, input, textarea{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input, textarea{
+    background-color: #ccc;
+    border: 2px solid transparent;
+    border-bottom-color: #9d9292;
+
+    padding: .75em;
+    margin: .5em 0 2em;
+    outline: 0;
+}
+
+input:invalid:focus, textarea:invalid:focus{
+    border-bottom: 2px solid red;
+}
+
+input:valid:focus, textarea:valid:focus{
+    border-bottom: 2px solid green;
+}
+
+input:focus, textarea:focus{
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+legend{
+    padding: .5em;
+    text-align: center;
+    font-weight: bold;
+    color: #e6e2e2;
+    font-size: 1.3em;
+}
+
+textarea{
+    resize: none;
+}
+
+.btn-div{
+    display: flex;
+}
+
+.btn{
+    background-color: rgb(109, 133, 134);
+    color: #ffffff;
+    cursor: pointer;
+    padding: 0.5em;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    margin-left: auto;
+}
