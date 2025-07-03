@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="estiloCSS.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Federo&family=Inter:opsz,wght@14..32,600&family=Italiana&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <form action="" method="get" autocomplete="off" class="form">
+        <fieldset class="campo-form">
+            <legend class="titulo">Cadastre-se</legend>
+
+            <label for="user" class="area-descricao">usuário</label>
+            <input type="text" name="user" id="user" class="area-resposta" required>
+
+            <label for="email" class="area-descricao">e-mail</label>
+            <input type="email" name="email" id="email" class="area-resposta" required>
+
+            <label for="senha" class="area-descricao">senha</label>
+            <input type="password" name="senha" id="senha" class="area-resposta" required>
+
+            <div class="btns">
+                <button type="submit" class="btn">cadastre-se</button>
+                <p class="btns__opcoes">Já possui cadastro? <a href="loginDs.html">Faça login</a></p>
+            </div>
+        </fieldset>
+    </form>
+    
+</body>
+</html>

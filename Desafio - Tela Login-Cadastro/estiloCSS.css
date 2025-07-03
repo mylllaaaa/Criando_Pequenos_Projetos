@@ -1,0 +1,98 @@
+:root{
+    background-color: var(--fontColor--);
+    font-family: "Roboto", sans-serif;
+
+    --fontColor--: #3a68b7;
+    --backsColor--: #ffffff;
+}
+
+body{
+    min-height: 100vh;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    width: 90%;
+    min-width: 15em;
+    max-width: 30em;
+    background-color: var(--backsColor--);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    letter-spacing: .06em;
+}
+
+.campo-form{
+    border: none;
+    background-color: var(--backsColor--);
+    padding: 2em 2em;
+}
+
+.area-descricao, .area-resposta{
+    display: block;
+    width: 95%;
+}
+
+.titulo{
+    font-size: 2.5em;
+    font-weight: 200;
+    padding-top: 1em;
+    color: var(--fontColor--);
+}
+
+.area-descricao{
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 300;
+    color: black;
+}
+
+.area-resposta{
+    padding: .8em;
+    margin: .5em 0 2em;
+    transition: padding-left .1s;
+
+    border: 2px solid transparent;
+    border-bottom-color: var(--fontColor--);
+    outline: 0;
+}
+
+.area-resposta:focus{
+    border: 2px solid var(--fontColor--);
+    padding-left: 1.2em;
+}
+
+.btns{
+    display: flex;
+    align-items: center;
+    gap: .7em;
+}
+
+.btn{
+    text-transform: uppercase;
+    background-color: var(--fontColor--);
+    color: var(--backsColor--);
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    box-shadow: 0 0 2px black;
+    cursor: pointer;
+    padding: 1em;
+    letter-spacing: .06em;
+}
+
+.btns__opcoes{
+    font-size: 0.8em;
+    margin-left: auto;
+}
+
+.btns_cadastrar{
+    color: var(--fontColor--);
+    background-color: var(--backsColor--);
+    padding-left: .4em;
+    box-shadow: none;
+    text-decoration: none;
+}
