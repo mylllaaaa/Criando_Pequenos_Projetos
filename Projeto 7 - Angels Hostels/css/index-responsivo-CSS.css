@@ -1,0 +1,139 @@
+:root{
+    --primary-color: #612374;
+    --secondary-color: rgba(255, 255, 255, 0.829);
+    --gap-rem: 1rem;
+}
+
+/* col-md */
+@media screen and (min-width: 48.75em) {
+    .header{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1em;
+    }
+
+    .header img{
+        margin-left: 1em;
+    }
+
+    .nav{
+        background-color: initial;
+        margin-right: 1em;
+    }
+
+    .nav li{
+        display: inline-block;
+    }
+
+    .nav a{
+        color: var(--primary-color);
+    }
+
+    .nav a:hover{
+        background-color: color-mix(in srgb, var(--primary-color), white 85%);
+    }
+
+    /* ---------------------------- */
+
+    .heroBanner{
+        background-color: color-mix(in srgb, var(--primary-color), white 10%);
+    }
+
+    .heroBanner_iconPlay{
+        display: block;
+        margin: .5em auto;
+    }
+
+    .heroBanner_title, .heroBanner_subtitle{
+        color: var(--secondary-color);
+    }
+
+    /* ---------------------------- */
+
+    .col-md-6{
+        width: calc(50% - var(--gap-rem));
+    }
+}
+
+/* col-lg */
+@media screen and (min-width: 56.25em) {
+    .heroBanner{
+        background-image: linear-gradient(transparent, color-mix(in srgb, var(--primary-color), white 10%)), url(../images/bg_topo_1198x670.jpg);
+        aspect-ratio: 1198 / 670;
+        
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .heroBanner .maxWidth{
+        margin: initial;
+        margin-bottom: 4em;
+        width: 75%;
+    }
+}
+
+/* col-xl */
+@media screen and (min-width: 74em) {
+    .heroBanner{
+        background-image: linear-gradient(transparent, var(--primary-color)), url(../images/bg_topo_1600x1374.jpg);
+        background-position: center top;
+        background-color: var(--primary-color);
+        background-repeat: no-repeat;
+
+        max-height: 80vh;
+        width: 100%;
+    }
+
+    .heroBanner .maxWidth{
+        width: 50%;
+    }
+
+    .heroBanner_iconPlay{
+        width: 7em;
+        height: 7em;
+    }
+
+    .heroBanner_title, .heroBanner_subtitle{
+        text-shadow: 4px 4px 4px rgb(0, 0, 0, 0.5);
+    }
+
+    /* ---------------------------- */
+
+    .col-xl-3{
+        width: calc(25% - var(--gap-rem));
+    }
+
+    /* ---------------------------- */
+
+    .col-xl-6{
+        width: calc(50% - var(--gap-rem));
+    }
+}
+
+.mainContent_art{
+    container: main_container / inline-size;
+}
+
+@container main_container (min-width: 35em){
+    .mainContent_container{
+        display: flex;
+        gap: var(--gap-rem);
+    }
+
+    .mainContent_title{
+        margin-top: 0;
+    }
+
+    .mainContent_img img{
+        max-height: 382px;
+    }
+
+    .mainContent_img{
+        flex: 0 0 25%;
+    }
+
+    .mainContent_text{
+        flex-grow: 1;
+    }
+}
